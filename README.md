@@ -6,6 +6,8 @@ Get EIP 712 to show in metamask with an ERC20-Permit. Note that openzeppelin has
 
 The ERC20 Permit is deployed at: 0xD35BFAb254f603adA28f21405447f82BBcCCD539
 
+![Permit message with hardcoded values](https://github.com/PatrickZimmerer/eip-712-test/assets/96255548/c023fe2c-16e3-4613-8a19-a75ae8865bb8)
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
