@@ -2,8 +2,6 @@ import { WagmiConfig, createConfig, configureChains } from 'wagmi';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
 import { MetaMaskConnector } from 'wagmi/connectors/metaMask';
-import { ethers } from 'ethers';
-
 import { goerli } from '@wagmi/chains';
 import { Profile } from './components/Profile';
 
@@ -14,7 +12,7 @@ const { chains, publicClient } = configureChains(
 	[alchemyProvider({ apiKey: process.env.REACT_APP_GOERLI_API_KEY }), publicProvider()]
 );
 
-const configuration = createConfig({
+const config = createConfig({
 	autoConnect: true,
 	publicClient,
 	connectors: [new MetaMaskConnector({ chains })],
@@ -22,7 +20,7 @@ const configuration = createConfig({
 
 function App() {
 	return (
-		<WagmiConfig config={configuration}>
+		<WagmiConfig config={config}>
 			<Profile />
 		</WagmiConfig>
 	);
