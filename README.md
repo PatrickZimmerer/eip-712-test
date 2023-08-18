@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# Task for WEEK 20
+
+Get EIP 712 to show in metamask with an ERC20-Permit. Note that openzeppelin has an ERC20-Permit extension. Create a very simple website that allows you to permit an address to use your tokens.
+
+## ERC-20 Permit
+
+The ERC20 Permit is deployed at: 0xD35BFAb254f603adA28f21405447f82BBcCCD539
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
